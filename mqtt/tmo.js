@@ -43,7 +43,7 @@
 			};
 			mosq.ondisconnect = function(rc){
 				var p = document.createElement("p");
-				var url = "mqtt.eclipseprojects.io";
+				var url = "tcp://192.168.1.143";
 				
 				p.innerHTML = "A conexão com o broker foi perdida";
 				$("#debug").append(p);				
@@ -63,7 +63,7 @@
 			};
 		}
 		Page.prototype.connect = function(){
-			var url = "mqtt.eclipseprojects.io";
+			var url = "tcp://192.168.1.143";
 			mosq.connect(url);
 		};
 		Page.prototype.disconnect = function(){
