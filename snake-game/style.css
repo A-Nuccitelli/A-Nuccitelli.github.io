@@ -12,7 +12,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color:rgb(172, 172, 172);
-    color: #ffffff;
     
 }
 
@@ -33,14 +32,30 @@ body{
     margin-bottom: 3%;
     color: black;
 }
-
 .titulo1 {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    color: black;
 }
-.titulo2{
-    color: white;
+.titulo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    color: black;
 }
-
+.titulo3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    color: black;
+}
 .snake {
     display: flex;
     flex-direction: column;
@@ -82,6 +97,9 @@ body{
         display: none;
     }
     .titulo2{
+        display: none;
+    }
+    .titulo3{
         display: none;
     }
     .footer {
