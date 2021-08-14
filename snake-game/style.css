@@ -98,9 +98,11 @@ body{
     }
     .titulo2{
         display: none;
+        text-transform: none;
     }
     .titulo3{
         display: none;
+        text-transform: none;
     }
     .footer {
         display: none;
