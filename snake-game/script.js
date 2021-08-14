@@ -34,10 +34,11 @@ function drawFood (){
 
 //quando um evento acontece, detecta e chama uma função
 document.addEventListener('keydown', update);
-document.addEventListener('touchstart', update);
+//document.addEventListener('touchstart', update);
+document.addEventListener('pointerdown', update);
 
 function update(event){
-    if(event.keyCode == 32 || (event.touches != 0)){ 
+    if((event.keyCode == 32) || (event.touches != 0) || (event.target != 0)){ 
         estadoPosicao++}
     if(estadoPosicao == 1) direction = 'right';
     if(estadoPosicao == 2) direction = 'down';
@@ -45,7 +46,9 @@ function update(event){
     if(estadoPosicao == 4) direction = 'up';
     if(direction == 'up' && estadoPosicao == 4) estadoPosicao = 0;
         
-    console.log(event.keyCode);
+    //console.log(event.keyCode);
+    //console.log(event.touches);
+    console.log(event.target);
     console.log(estadoPosicao);
  /*  
     if(event.keyCode == 37 && direction != 'right') direction = 'left';
