@@ -1,0 +1,105 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filmel principal */
+.filme-principal {
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/Godzilla\ vs\ Kong1.jpg);
+    background-position:center;
+    
+
+    height: 700px;
+    background-size:cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.filme-principal .titulo{
+    margin-bottom: 5%;
+    font-size: 35px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 5%;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 2% 4%;
+    margin-right: 3%;
+    font-size: 12px;
+    font-family:cursive, Times;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 3px;
+}
+
+.container{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height: 50vh;
+
+    display:block;
+
+}
+
+.carrossel-filmes{
+    margin-top: 2%;
+}
