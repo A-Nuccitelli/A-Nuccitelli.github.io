@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     height: 95vh;
     width: 95vw;
@@ -10,14 +16,37 @@ body{
     
 }
 
-.snake {
-    background-color: rgb(0, 0, 0);
-    width: 552px;
-    height: 552px;
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    color: black;
+}
+
+.titulo1 {
+    color: white;
+}
+.titulo2{
+    color: white;
+}
+
+.snake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .placar{
@@ -25,6 +54,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .resultado {
@@ -32,6 +63,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(0, 255, 13);
 }
 
 .footer {
@@ -39,5 +71,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: x-small;
+    font-size:small;
 }
+
+@media only screen and (max-device-height: 800px) {
+    .snake{
+        max-width: 80vw;
+    }
+    .titulo1 {
+        display: none;
+    }
+    .titulo2{
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
