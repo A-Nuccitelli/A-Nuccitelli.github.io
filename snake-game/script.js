@@ -37,7 +37,7 @@ document.addEventListener('keydown', update);
 document.addEventListener('touchstart', update);
 
 function update(event){
-    if(event.keyCode == 32 || (evt.touches && evt.touches.length > 1)){ 
+    if(event.keyCode == 32 || (event.touches != 0)){ 
         estadoPosicao++}
     if(estadoPosicao == 1) direction = 'right';
     if(estadoPosicao == 2) direction = 'down';
