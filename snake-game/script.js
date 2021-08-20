@@ -41,7 +41,7 @@ if (window.PointerEvent) {
 }
 
 function update(event){
-    if(event.keyCode == 32){ 
+    if((event.keyCode == 32) || (event.touches != 0) || (event.target != 0)){ 
         estadoPosicao++}
     if(estadoPosicao == 1) direction = 'right';
     if(estadoPosicao == 2) direction = 'down';
