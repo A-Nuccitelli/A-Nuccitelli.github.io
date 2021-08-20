@@ -28,7 +28,7 @@ function criarCobrinha (){
 }
 
 function drawFood (){
-    context.fillStyle = "black";
+    context.fillStyle = "blue";
     context.fillRect(food.x, food.y, box, box);
 }
 
